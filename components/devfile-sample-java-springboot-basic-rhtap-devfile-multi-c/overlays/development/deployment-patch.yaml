@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-rhtap-devfile-multi-c
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-tgtx-tenant/mc-two-scenarios/devfile-sample-java-springboot-basic-rhtap-devfile-multi-c@sha256:b0c345c705b9667a8bb6828934ad1ad5f22cdb3fefb0bb2f0a8b1d66b33fd50f
+        name: my-java-springboot
+        resources: {}
+status: {}
